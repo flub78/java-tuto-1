@@ -1,9 +1,11 @@
 /**
- * small example of a class called from an application
+ * Exmaple of package
  */
 package my_package;
 
 /**
+ * small example of a class called from an application
+ * 
  * @author fpeignot
  *
  */

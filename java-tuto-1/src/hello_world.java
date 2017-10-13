@@ -2,6 +2,7 @@
  * Small hello world
  * @author fpeignot
  *
+ * TODO generate javadoc
  */
 
 import java.util.Scanner;
