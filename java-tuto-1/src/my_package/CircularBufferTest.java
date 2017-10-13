@@ -56,14 +56,27 @@ class CircularBufferTest {
 	}
 
 	/**
-	 * Test method for {@link my_package.CircularBuffer#size()}.
+	 * Test method for {@link my_package.CircularBuffer#capacity()}.
 	 */
 	@Test
-	void testSize() {
+	void testCapacity() {
 		
 		CircularBuffer buf = new CircularBuffer(5);
+		assertEquals(buf.capacity(), 5, "correct capacity");
+	}
 
-		assertEquals(buf.size(), 5, "correct size");
+	/**
+	 * Test method for {@link my_package.CircularBuffer#push()}.
+	 */
+	@Test
+	void testPush() {
+		
+		CircularBuffer buf = new CircularBuffer(5);
+		assertEquals(buf.size(), 0, "correct size");
+		buf.push(1);
+		assertEquals(buf.size(), 1, "correct size after push");
+		
+		System.out.println(buf);
 	}
 
 }

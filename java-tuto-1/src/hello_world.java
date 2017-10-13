@@ -28,7 +28,12 @@ public class hello_world {
 			System.out.println(i + " is positive.");
 		}
 
-		System.out.println("fact(" + i + ") =  " +  my_package.MyMath.fact(i));
+		try {
+			System.out.println("fact(" + i + ") =  " +  my_package.MyMath.fact(i));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 

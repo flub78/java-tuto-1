@@ -1,0 +1,5 @@
+@startuml
+class MainLoopExample [[java:MainLoopExample]] {
+	+{static}void main(String[] args)
+}
+@enduml
