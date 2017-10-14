@@ -47,6 +47,16 @@ public class CircularBuffer {
 	}
 
 	/**
+	 * Add several elts	
+	 * @param elts 
+	 */
+	public void push(int elts []) {
+		for (int elt : elts) {
+			this.push(elt);
+		}
+	}
+
+	/**
 	 * Add a new element
 	 * @param elt
 	 */
@@ -59,7 +69,16 @@ public class CircularBuffer {
 
 	@Override
 	public String toString() {
-		return "CircularBuffer [=" + Arrays.toString(buffer) + "]";
+		String str = "CircularBuffer = [";
+		int idx = (offset - this.size() + capacity) % capacity;
+		for (int i = 0; i < this.size(); i++) {
+			str += buffer[idx];
+			idx = (idx + 1) % capacity;
+			if (i < this.size() - 1)
+				str += ", ";
+		}
+		str += "]";
+		return str;
 	}
 	
 	

@@ -74,7 +74,26 @@ class CircularBufferTest {
 		CircularBuffer buf = new CircularBuffer(5);
 		assertEquals(buf.size(), 0, "correct size");
 		buf.push(1);
-		assertEquals(buf.size(), 1, "correct size after push");
+		int size = buf.size();
+		assertEquals(size, 1, "correct size after push");
+		
+		String expected = "CircularBuffer = [1]";
+		assertTrue(buf.toString().equals(expected), expected);
+		
+		buf.push(2);
+		expected = "CircularBuffer = [1, 2]";
+		System.out.println(buf);
+
+		assertTrue(buf.toString().equals(expected), expected);
+		
+		buf.push(new int[] {});
+		assertEquals(2, buf.size(), "size not changed by addition of an empty list");
+		
+		int[] myIntArray = {3,4,5};
+		buf.push(myIntArray);
+		assertEquals(5, buf.size(), "size changed by addition of a non empty list");
+
+		buf.push(new int[] {6,7,8});
 		
 		System.out.println(buf);
 	}

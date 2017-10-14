@@ -5,3 +5,13 @@ a small Java tutorial with
 * using external classes
 * with unit tests for the classes
 * with javadoc
+
+Examples for
+* console IOs
+* loops
+* arrays
+* access to the file system, list directory
+* simple classes and objects (no inheritance)
+
+
+
