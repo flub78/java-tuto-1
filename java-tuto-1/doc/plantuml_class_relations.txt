@@ -1,0 +1,57 @@
+@startuml
+
+title A simple class diagram
+
+
+class MainLoopExample [[java:MainLoopExample]] {
+	+{static}void main(String[] args)
+}
+
+class CircularBuffer [[java:my_package.CircularBuffer]] {
+	-int capacity
+	-int[] buffer
+	-int offset
+	-int pushs
+	-{static}int instances
+	+CircularBuffer(int size)
+	+CircularBuffer()
+	+int capacity()
+	+int size()
+	+{static}int instances()
+	+void push(int[] elts)
+	+void push(int elt)
+	+String toString()
+}
+
+class CircularBufferTest [[java:my_package.CircularBufferTest]] {
+	~{static}void setUpBeforeClass()
+	~{static}void tearDownAfterClass()
+	~void setUp()
+	~void tearDown()
+	~void testCircularBuffer()
+	~void testCapacity()
+	~void testPush()
+	~void testInstances()
+}
+
+' Inheritance
+CircularBuffer <|-- RectangularBuffer
+
+' others relations
+CircularBuffer <-- CircularBufferTest : test
+
+newpage
+
+title simple Reationship
+
+class Car
+
+Driver - Car : drives >
+
+'composition
+Car *- Wheel : have 4 >
+
+Car -- Person : < owns
+
+
+@enduml

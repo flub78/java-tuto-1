@@ -3,20 +3,21 @@
  */
 package my_package;
 
-import java.util.Arrays;
-
 /**
- * An object to handle circular buffers.
+ * An object to handle circular buffers containing integers.
  * 
  * @author fpeignot
  *
  */
 public class CircularBuffer {
 
+	// attributes or instance variables
 	private int capacity;
 	private int buffer [];
 	private int offset = 0;
 	private int pushs = 0;
+	
+	private static int instances = 0;
 	
 	/**
 	 * Constructor
@@ -25,8 +26,18 @@ public class CircularBuffer {
 	public CircularBuffer(int size) {
 		capacity = size;
 		buffer = new int[capacity];
+		instances++;
 	}
-	
+
+	/**
+	 * A constructor with a default size
+	 * @param size
+	 */
+	public CircularBuffer() {
+		// calling another constructor
+		this(5);
+	}
+
 	/**
 	 * 
 	 * @return the maximal size of the circular buffer
@@ -44,6 +55,14 @@ public class CircularBuffer {
 			return capacity;
 		else
 			return pushs;
+	}
+
+	/**
+	 * 
+	 * @return the number of Circular Buffers in the program
+	 */
+	static public int instances() {
+		return instances;
 	}
 
 	/**

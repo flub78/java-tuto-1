@@ -2,7 +2,6 @@
  * Small hello world
  * @author fpeignot
  *
- * TODO generate javadoc
  */
 
 import java.util.Scanner;
@@ -31,7 +30,6 @@ public class hello_world {
 		try {
 			System.out.println("fact(" + i + ") =  " +  my_package.MyMath.fact(i));
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

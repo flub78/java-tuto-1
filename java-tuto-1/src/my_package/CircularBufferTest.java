@@ -61,7 +61,7 @@ class CircularBufferTest {
 	@Test
 	void testCapacity() {
 		
-		CircularBuffer buf = new CircularBuffer(5);
+		CircularBuffer buf = new CircularBuffer();
 		assertEquals(buf.capacity(), 5, "correct capacity");
 	}
 
@@ -96,6 +96,19 @@ class CircularBufferTest {
 		buf.push(new int[] {6,7,8});
 		
 		System.out.println(buf);
+	}
+
+	/**
+	 * Test method for {@link my_package.CircularBuffer#instances()}.
+	 */
+	@Test
+	void testInstances() {
+		
+		CircularBuffer buf = new CircularBuffer();
+		assertEquals(buf.capacity(), 5, "correct capacity (default)");
+		
+		int nb = CircularBuffer.instances();
+		assertEquals(3, nb, "Correct number of instances");
 	}
 
 }

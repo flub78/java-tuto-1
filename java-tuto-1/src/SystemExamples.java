@@ -1,9 +1,15 @@
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.attribute.BasicFileAttributes;
 
 /**
  * Example of access to the file system.
  * 
  * @author fpeignot
+ * 
+ * TODO access and modification of file criteria
  *
  */
 
@@ -34,6 +40,10 @@ public class SystemExamples {
 
 		listDir("C:\\\\Users\\\\fpeignot\\\\git", 0, "..");
 
+		String filename = "C:\\Users\\fpeignot\\git\\java-tuto-1\\java-tuto-1\\README.md";
+		
+		listAttributes(filename, 0, "  ");
+
 		System.out.println("Bye.");
 	}
 		
@@ -59,6 +69,42 @@ public class SystemExamples {
 		
 	}
 	
+	/**
+	 * function to recurse through a directory content
+	 * @param dirname
+	 * @param level
+	 * @param pattern
+	 */
+	public static void listAttributes(String filename, int level, String pattern) {
+		File f = new File(filename);
+		
+		System.out.println(tabs(level, pattern) + filename);
+
+		level++;
+		System.out.println(tabs(level, pattern) + "isDirectory() : " + f.isDirectory());		
+		System.out.println(tabs(level, pattern) + "length() : " + f.length());		
+		System.out.println(tabs(level, pattern) + "lastModified() : " + f.lastModified());		
+		System.out.println(tabs(level, pattern) + "canRead() : " + f.canRead());		
+		System.out.println(tabs(level, pattern) + "canWrite() : " + f.canWrite());		
+		System.out.println(tabs(level, pattern) + "canExecute() : " + f.canExecute());
+		
+		Path p = f.toPath();
+		try {
+			BasicFileAttributes attr = Files.readAttributes(p, BasicFileAttributes.class);
+			
+			System.out.println("creationTime: " + attr.creationTime());   // type FileTime
+			System.out.println("lastAccessTime: " + attr.lastAccessTime());
+			System.out.println("lastModifiedTime: " + attr.lastModifiedTime());
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		// To modify attributes we need to interdace Window sAPI with JNI
+		// https://stackoverflow.com/questions/32586/how-to-discover-a-files-creation-time-with-java
+	}
+
 	/**
 	 * returns a string made of several times the same pattern
 	 * @param nb

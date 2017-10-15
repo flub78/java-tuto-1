@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class Prompt {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println("Hello, version 1. (type quit to stop, help for help)");
 		
 		Scanner sc = new Scanner(System.in);

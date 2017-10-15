@@ -6,7 +6,6 @@
 public class ArrayExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println("Some examples on java arrays.");
 		
 		int nbs[][] = { {0,2,4,6,8},{1,3,5,7,9} };

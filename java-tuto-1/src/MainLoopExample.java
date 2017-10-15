@@ -6,7 +6,6 @@
 public class MainLoopExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println("Some examples on java loops.");
 		
 		int i = 0;
