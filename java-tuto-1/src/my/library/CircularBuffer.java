@@ -1,7 +1,7 @@
 /**
  * 
  */
-package my_package;
+package my.library;
 
 /**
  * An object to handle circular buffers containing integers.
@@ -12,7 +12,12 @@ package my_package;
 public class CircularBuffer {
 
 	// attributes or instance variables
-	private int capacity;
+	// choice between
+	// private access by the class, bot not derived classes
+	// protected, access by the class and subclasses
+	// no modifier, access by the class and subclasses in the same package
+	// public, access by all
+	protected int capacity;
 	private int buffer [];
 	private int offset = 0;
 	private int pushs = 0;

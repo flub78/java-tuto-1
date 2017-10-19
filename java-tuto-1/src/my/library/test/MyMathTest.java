@@ -1,8 +1,10 @@
-package my_package;
+package my.library.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import my.library.MyMath;
 
 class MyMathTest extends MyMath {
 

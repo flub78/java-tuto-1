@@ -5,7 +5,8 @@
  */
 
 import java.util.Scanner;
-import my_package.MyMath.*;
+
+import my.library.MyMath.*;
 
 public class hello_world {
 
@@ -28,7 +29,7 @@ public class hello_world {
 		}
 
 		try {
-			System.out.println("fact(" + i + ") =  " +  my_package.MyMath.fact(i));
+			System.out.println("fact(" + i + ") =  " +  my.library.MyMath.fact(i));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

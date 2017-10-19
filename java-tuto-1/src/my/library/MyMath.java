@@ -1,7 +1,7 @@
 /**
  * Exmaple of package
  */
-package my_package;
+package my.library;
 
 /**
  * small example of a class called from an application

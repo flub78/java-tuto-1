@@ -1,7 +1,7 @@
 /**
  * 
  */
-package my_package;
+package my.library.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,6 +10,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import my.library.CircularBuffer;
 
 /**
  * @author fpeignot
@@ -46,7 +48,7 @@ class CircularBufferTest {
 	}
 
 	/**
-	 * Test method for {@link my_package.CircularBuffer#CircularBuffer(int)}.
+	 * Test method for {@link my.library.CircularBuffer#CircularBuffer(int)}.
 	 */
 	@Test
 	void testCircularBuffer() {
@@ -56,7 +58,7 @@ class CircularBufferTest {
 	}
 
 	/**
-	 * Test method for {@link my_package.CircularBuffer#capacity()}.
+	 * Test method for {@link my.library.CircularBuffer#capacity()}.
 	 */
 	@Test
 	void testCapacity() {
@@ -66,7 +68,7 @@ class CircularBufferTest {
 	}
 
 	/**
-	 * Test method for {@link my_package.CircularBuffer#push()}.
+	 * Test method for {@link my.library.CircularBuffer#push()}.
 	 */
 	@Test
 	void testPush() {
@@ -99,7 +101,7 @@ class CircularBufferTest {
 	}
 
 	/**
-	 * Test method for {@link my_package.CircularBuffer#instances()}.
+	 * Test method for {@link my.library.CircularBuffer#instances()}.
 	 */
 	@Test
 	void testInstances() {
