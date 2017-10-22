@@ -7,7 +7,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 /**
  * Example of access to the file system.
  * 
- * @author fpeignot
+ * @author Fred
  * 
  * TODO access and modification of file criteria
  *
@@ -16,31 +16,31 @@ import java.nio.file.attribute.BasicFileAttributes;
 public class SystemExamples {
 
 	public static void main(String[] args) {
+		
+		String user = System.getProperty("user.name");
+		
 		System.out.println("Example of access to the file system.");
 
+		System.out.println("user.name = " + user);
+
 		System.out.println("pwd = " + System.getProperty("user.dir"));
-		System.setProperty("user.dir", "C:\\Users\\fpeignot\\git\\java-tuto-1");
+		System.setProperty("user.dir", "C:\\Users\\" + user + "\\git\\java-tuto-1");
 		System.out.println("pwd = " + System.getProperty("user.dir"));
 
 		// Does not really works, set the property but does not change the directory
 		System.setProperty("user.dir", "..");
 		System.out.println("pwd = " + System.getProperty("user.dir"));
 
-		System.setProperty("user.dir", "C:\\Users\\fpeignot\\git");
+		System.setProperty("user.dir", "C:\\Users\\" + user + "\\git");
 		System.out.println("pwd = " + System.getProperty("user.dir"));
 		
 
 		System.out.println("File.separator = " + File.separator);
 		System.out.println("...");
-		System.out.println("...");
-		System.out.println("...");
-		System.out.println("...");
-		System.out.println("...");
-		System.out.println("...");
 
-		listDir("C:\\\\Users\\\\fpeignot\\\\git", 0, "..");
+		listDir("C:\\\\Users\\\\" + user + "\\\\git\\java-tuto-1\\java-tuto-1\\src", 0, "..");
 
-		String filename = "C:\\Users\\fpeignot\\git\\java-tuto-1\\java-tuto-1\\README.md";
+		String filename = "C:\\Users\\" + user + "\\git\\java-tuto-1\\java-tuto-1\\README.md";
 		
 		listAttributes(filename, 0, "  ");
 
@@ -81,6 +81,9 @@ public class SystemExamples {
 		System.out.println(tabs(level, pattern) + filename);
 
 		level++;
+		System.out.println(tabs(level, pattern) + "exists() : " + f.exists());		
+		System.out.println(tabs(level, pattern) + "getAbsolutePath() : " + f.getAbsolutePath());		
+		System.out.println(tabs(level, pattern) + "getName() : " + f.getName());		
 		System.out.println(tabs(level, pattern) + "isDirectory() : " + f.isDirectory());		
 		System.out.println(tabs(level, pattern) + "length() : " + f.length());		
 		System.out.println(tabs(level, pattern) + "lastModified() : " + f.lastModified());		

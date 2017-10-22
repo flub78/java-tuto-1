@@ -35,21 +35,30 @@ class CircularBufferTest [[java:my_package.CircularBufferTest]] {
 }
 
 ' Inheritance
-CircularBuffer <|-- RectangularBuffer
+CircularBuffer <|-- RectangularBuffer : Generalization\nis a\nor inherits from
 
 ' others relations
-CircularBuffer <-- CircularBufferTest : test
+CircularBuffer <.. CircularBufferTest : Dependency\ntests
+
+Car "1" *-- "4" Wheel : composition\nhas
+
+A --> C : contains\nevery instance of A\nhas a B
+A --o D : Aggregation\nA contains a\nreference to D\nbut D may be shared
 
 newpage
 
 title simple Reationship
 
+Interface MotorVehicle {
+}
+
 class Car
+Car ..|> MotorVehicle : Realization\nimplements
 
 Driver - Car : drives >
 
 'composition
-Car *- Wheel : have 4 >
+Car "1" *- "4" Wheel : have >
 
 Car -- Person : < owns
 
