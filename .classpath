@@ -3,5 +3,42 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="java-tuto-1/src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-1.2-api-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-1.2-api-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-1.2-api-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-api-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-api-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-api-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-core-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-core-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-core-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-core-2.9.1-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-flume-ng-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-flume-ng-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-flume-ng-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-iostreams-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-iostreams-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-iostreams-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-jcl-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-jcl-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-jcl-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-jmx-gui-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-jmx-gui-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-jmx-gui-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-jul-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-jul-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-jul-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-liquibase-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-liquibase-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-liquibase-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-nosql-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-nosql-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-nosql-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-taglib-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-taglib-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-taglib-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-web-2.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-web-2.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-web-2.9.1-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

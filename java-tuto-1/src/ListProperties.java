@@ -23,7 +23,7 @@ public class ListProperties {
 
 	try {
 
-		String filename = "app.properties";
+		String filename = "properties//app.properties";
 		input = getClass().getClassLoader().getResourceAsStream(filename);
 		if (input == null) {
 			System.out.println("Sorry, unable to find " + filename);
