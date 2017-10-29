@@ -8,38 +8,23 @@ import java.nio.file.attribute.BasicFileAttributes;
 import sun.misc.IOUtils;
 
 /**
- * Example of access to the file system.
+ * Storing and retrieving objects from a file
  * 
  * @author Fred
- * 
- * TODO access and modification of file criteria
  *
  */
 
-public class ReadFile {
+public class ObjectFile {
 
 	public static void main(String[] args) {
 		
 		String user = System.getProperty("user.name");
 				
-		String filename = "C:\\Users\\" + user + "\\git\\java-tuto-1\\java-tuto-1\\README.md";
-		
-		cat(filename);
-		
+		String filename = "C:\\Users\\" + user + "\\git\\java-tuto-1\\java-tuto-1\\tmp\\Objects.file";
+				
 		System.out.println("Bye.");
 	}
 			
-	/**
-	 * Display a file content
-	 * @param filename
-	 */
-	public static void cat(String filename) {
-		
-		try(FileInputStream inputStream = new FileInputStream(filename)) {     
-		    String everything = IOUtils.toString(inputStream);
-		    // do something with everything string
-		}
-	}
 
 	/**
 	 * returns a string made of several times the same pattern
