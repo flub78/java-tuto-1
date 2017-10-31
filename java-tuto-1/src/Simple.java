@@ -6,9 +6,7 @@
 
 import java.util.Scanner;
 
-import my.library.MyMath.*;
-
-public class hello_world {
+public class Simple {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -21,6 +19,7 @@ public class hello_world {
 		System.out.println("enter an integer :");
 		int i = sc.nextInt();
 		System.out.println(i + " x " + i + " = " +  square(i));
+		sc.close();
 		
 		if (i < 0)
 			System.out.println(i + " is negative.");

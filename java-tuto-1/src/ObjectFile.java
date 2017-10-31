@@ -5,8 +5,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
 
-import sun.misc.IOUtils;
-
 /**
  * Storing and retrieving objects from a file
  * 
@@ -25,19 +23,5 @@ public class ObjectFile {
 		System.out.println("Bye.");
 	}
 			
-
-	/**
-	 * returns a string made of several times the same pattern
-	 * @param nb
-	 * @param pattern
-	 * @return
-	 */
-	public static String tabs(int nb, String pattern) {
-		String res = "";
-		for (int i = 0; i < nb; i++) {
-			res += pattern;
-		}
-		return res;
-	}
 
 }
