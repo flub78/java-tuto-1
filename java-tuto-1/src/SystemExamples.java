@@ -100,7 +100,6 @@ public class SystemExamples {
 			System.out.println("lastModifiedTime: " + attr.lastModifiedTime());
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
