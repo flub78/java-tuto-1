@@ -1,0 +1,17 @@
+@startuml
+
+participant Blokus
+actor Blue #blue
+actor Yellow #yellow
+actor Green #green
+actor Bob #red
+
+Blokus->Blue : yourTurn
+Blue->Blokus : play(piece, x, y, orientation)
+Blokus->Blue : invalidMove
+Blue->Blokus : play(piece, x, y, orientation)
+
+Blokus->Yellow : yourTurn
+Yellow->Blokus : play(piece, x, y, orientation)
+
+@enduml
