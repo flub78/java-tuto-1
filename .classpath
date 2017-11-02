@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path="java-tuto-1/src"/>
+	<classpathentry excluding="my/library/test/" kind="src" path="java-tuto-1/src"/>
+	<classpathentry kind="src" path="java-tuto-1/src/my/library/test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-1.2-api-2.9.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-1.2-api-2.9.1-javadoc.jar"/>
@@ -40,5 +41,11 @@
 	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-web-2.9.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-web-2.9.1-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/apache-log4j-2.9.1-bin/log4j-web-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/commons-cli-1.4/commons-cli-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/commons-cli-1.4/commons-cli-1.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/commons-cli-1.4/commons-cli-1.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/commons-cli-1.4/commons-cli-1.4-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/commons-cli-1.4/commons-cli-1.4-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/frede/git/java-tuto-1/jar/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

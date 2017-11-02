@@ -6,7 +6,7 @@
  * 
  */
 
-package my.library.test;
+package my.library;
 
 import org.apache.commons.cli.*;
 

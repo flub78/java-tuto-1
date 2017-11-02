@@ -1,11 +1,8 @@
-package my.library.test;
+package my.library;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-
-import my.library.CircularBuffer;
-import my.library.RectangularBuffer;
 
 class RectangularBufferTest {
 
