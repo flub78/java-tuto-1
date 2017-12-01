@@ -39,10 +39,31 @@ It is an Eclipse project, everything like UML generation, execution and debug, j
 
 or any other class in the directory.
 
-## Adding a jar to the project
+## dependencies on external module
+### Adding a jar to the project
 
 1. download the jar and put it on the local filesystem
 1. In the project contextual menu, select build path -> select external archives
+
+### Dependencies
+
+At some point the depencies management will have to be refactor to allow automatic download of the
+required packages.
+
+## External modules.
+* commons-cli-1.3.1
+* mysql-connector-java-5.1.44
+* apache-log4j-2.9.1
+
+## Special issue with log4J
+
+with the default distribution: 
+org.apache.logging.slf4j.SLF4JLoggerContext cannot be cast to org.apache.logging.log4j.core.LoggerContext
+
+deleting log4jslf4j* solves the problem.
+
+Do not forget to add the log4j.xml as the 
+run configuration -> classpath -> user entries -> advanced -> add directories
 
 
 ## Database access

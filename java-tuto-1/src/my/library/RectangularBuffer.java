@@ -4,6 +4,8 @@
 package my.library;
 
 /**
+ * Just to play with inheritance
+ * 
  * @author fpeignot
  *
  */

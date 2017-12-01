@@ -59,9 +59,10 @@ public class MySqlTest {
 			assertNotNull(connexion, step);
 
 		} catch (SQLException e) {
-			assertTrue(false, step);
+			System.out.println("Is your DB server running?");
 			System.out.println("Error while: " + step);
 			System.out.println("Check database=" + url + ", user=" + utilisateur + ", password=" + motDePasse);
+			assertTrue(false, step);
 
 			e.printStackTrace();
 		}
