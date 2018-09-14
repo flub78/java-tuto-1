@@ -13,7 +13,7 @@ public final class RectangularBuffer extends CircularBuffer {
 
 	private int corners = 0;
 	
-	public RectangularBuffer() {
+	public RectangularBuffer() throws Exception {
 		super();
 		corners = 0;
 	}

@@ -28,7 +28,10 @@ public class CircularBuffer {
 	 * Constructor
 	 * @param size
 	 */
-	public CircularBuffer(int size) {
+	public CircularBuffer(int size) throws Exception {
+		if (size == 13) {
+			throw new Exception("13 is not a supported size");
+		}
 		capacity = size;
 		buffer = new int[capacity];
 		instances++;
@@ -38,7 +41,7 @@ public class CircularBuffer {
 	 * A constructor with a default size
 	 * @param size
 	 */
-	public CircularBuffer() {
+	public CircularBuffer() throws Exception {
 		// calling another constructor
 		this(5);
 	}

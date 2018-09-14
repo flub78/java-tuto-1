@@ -42,6 +42,8 @@ public class ExceptionExample {
 
 		}
 		
+		// what happens when an exception is raised inside a constructor ?
+		
 
 	}
 

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class RectangularBufferTest {
 
 	@Test
-	void testToString() {
+	void testToString() throws Exception {
 		RectangularBuffer buf = new RectangularBuffer();		
 		assertNotNull(buf, "Rectangular buffer created");
 
@@ -16,7 +16,7 @@ class RectangularBufferTest {
 	}
 
 	@Test
-	void testSize() {
+	void testSize() throws Exception {
 		RectangularBuffer buf = new RectangularBuffer();		
 		
 		//Note: it is possible to assign to a variable of the ancestor type
