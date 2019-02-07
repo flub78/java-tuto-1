@@ -13,7 +13,7 @@ public class CircularBuffer {
 
 	// attributes or instance variables
 	// choice between
-	// private access by the class, bot not derived classes
+	// private access by the class, but not the derived classes
 	// protected, access by the class and subclasses
 	// no modifier, access by the class and subclasses in the same package
 	// public, access by all
