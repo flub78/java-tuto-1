@@ -5,7 +5,7 @@
  */
 
 
-import my.library.MyMath.*;
+
 
 public class ExceptionExample {
 
